@@ -1,12 +1,55 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 230px;
+    background: #c3bfbf;
+}
+
+    
+.keypads{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+}
+input{
+    height: 40px;
+    width: 400px;
+    border: 0px;
+    background-color: #15034d;
+    color: #f3f3f3;
+    text-align: right;
+    letter-spacing: 2px;
+}
+button{
+    color: #000000;
+    background: #c3bfbf;
+    /* outline: none; */
+    border: none;
+    height: 2.5rem;
+}
+
+#add{
+    grid-row: span 2;
+}
+ #equal{
+    grid-row: span 2;
+    
+    /* grid-row: 5; */
+ }
