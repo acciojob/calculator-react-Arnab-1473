@@ -6,7 +6,7 @@ const App = () => {
 
     return(
         <div>
-            <Calculator/>
+            <Calculator />
         </div>
     )
 }
